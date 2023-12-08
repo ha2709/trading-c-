@@ -15,7 +15,5 @@ int main() {
 
     cout << principal << " " <<interest << " " << yearsOfLoan << " " << monthInterest << endl;
 
-
-
     return 0;
 }
