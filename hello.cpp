@@ -2,7 +2,6 @@
 using namespace std;
 #include <cmath>;
 #include <iomanip>;
-#include <setio
 #include "divisor.h"
 #include "multiplier.h"
 
@@ -14,8 +13,7 @@ int main()
     double principal = 0.0;
     const int monthsInYear = 12;
     const int percentDenominator =100;
-    cout << "Enter the pricipal amount: ";
-    cin >> principal;
+  
     cout << "Eneter the principal amount: ";
     cin >> principal;
     double humanInterest = 0.0;
@@ -35,5 +33,20 @@ int main()
                             (double) -monthOfLoan))));
     cout << "Payment: " << setiosflags(ios::fixed)
         << setprecision(2) << payment << endl;
+    double currInterestPayment = 0.0;
+    double currPrincipalPayment = 0.0;
+    double currBalance = 0.0;
+
+    currBalance = principal;
+    long currLoanMonth = 1;
+    while(currLoanMonth <= monthOfLoan)
+    {
+        cout << "CM: " << currLoanMonth <<
+            endl;
+        currLoanMonth++;
+
+    }
+    cout << "Loan payments complete " <<endl;
+    
     return 0;
 }
