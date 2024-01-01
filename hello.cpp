@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
+#include <cmath>;
+#include <iomanip>;
+#include <setio
 #include "divisor.h"
 #include "multiplier.h"
+
 
 
 int main() 
@@ -12,8 +16,6 @@ int main()
     const int percentDenominator =100;
     cout << "Enter the pricipal amount: ";
     cin >> principal;
- 
-
     cout << "Eneter the principal amount: ";
     cin >> principal;
     double humanInterest = 0.0;
@@ -26,6 +28,12 @@ int main()
     double monthInterest = divisor(interest,monthsInYear);
     long monthOfLoan = multiplier( yearsOfLoan , monthsInYear);
     cout << principal << " " << interest << " " << yearsOfLoan << " " << monthInterest << " " << monthOfLoan << endl;
-
+    double payment = 0.0;
+    payment = principal *
+                (monthInterest /
+                    (1-  (pow((double) 1+ monthInterest,
+                            (double) -monthOfLoan))));
+    cout << "Payment: " << setiosflags(ios::fixed)
+        << setprecision(2) << payment << endl;
     return 0;
 }
