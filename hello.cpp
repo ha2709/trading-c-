@@ -1,12 +1,8 @@
 #include <iostream>
 using namespace std;
 #include "divisor.h"
+#include "multiplier.h"
 
-
-double multiplier(double fristNum, double secondNum)
-{
-    return fristNum * secondNum;
-}
 
 int main() 
 {

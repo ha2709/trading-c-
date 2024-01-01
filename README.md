@@ -7,3 +7,7 @@ run the code `./trading`
 Include All Relevant Files in Compilation:
 
 `g++ hello.cpp divisor.cpp -o hello`
+
+Add multiplier function
+
+`g++ hello.cpp divisor.cpp multiplier.cpp -o hello`
